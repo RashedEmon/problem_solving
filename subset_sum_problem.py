@@ -1,3 +1,6 @@
+#this function determines number of subset to make an amount.
+# তোমাকে একটা ইন্টিজার অ‍্যারে C দেয়া আছে এবং একটা ভ‍্যালু  W দেয়া আছে।
+# তোমাকে বলতে হবে C এর আইটেমগুলো দিয়ে কতভাবে W বানানো যায়।
 def subsetsum(arr,i,w):
     if w<0:
         return 0
