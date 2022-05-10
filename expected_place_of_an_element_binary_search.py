@@ -1,3 +1,4 @@
+# find expected index for an element to place in the array. 
 def solve(arr,target):
     mid=0
     left=0
