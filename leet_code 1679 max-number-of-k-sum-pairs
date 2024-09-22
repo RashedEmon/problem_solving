@@ -1,0 +1,28 @@
+class Solution:
+    def maxOperations(self, nums: List[int], k: int) -> int:
+        operation = 0
+        nums.sort()
+        l = 0
+        r = self.get_right_index(nums, k)
+        if r == 0:
+            return operation
+        
+        while l < r:
+            sum_of_two = nums[l] + nums[r]
+            if sum_of_two == k:
+                operation += 1
+                l+=1
+                r-=1
+            
+            if sum_of_two > k:
+                r-=1
+            
+            if sum_of_two < k:
+                l += 1
+        return operation
+
+    def get_right_index(self, nums, k):
+        for i, num in enumerate(nums):
+            if num >= k:
+                return i-1
+        return len(nums) - 1
