@@ -15,7 +15,7 @@ class Solution:
 
 """
 For n=4 and k=3
-Recursive Tree
+Recursive Tree (image: https://github.com/RashedEmon/problem_solving/blob/master/images/combinations_recursive_tree.png)
 
 Start
 |
