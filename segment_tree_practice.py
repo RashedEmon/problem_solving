@@ -64,5 +64,5 @@ update(1,1,len(arr)-1, 9, 20)
 
 print(tree)
 
-res = query(1, 1, len(arr) - 1, 9, 10)
+res = query(1, 1, len(arr) - 1, 2, 6)
 print(res)
