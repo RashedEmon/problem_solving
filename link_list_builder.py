@@ -19,6 +19,5 @@ def present_list(head):
   while head:
     print(head.val)
     head = head.next
-
-head = build_list(link_list)
-present_list(head)
+# head = build_list(link_list)
+# present_list(head)
